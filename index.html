@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<script>document.documentElement.classList.add("js-ready");</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CoreSetup Studio - Premium Websites für Unternehmen in Berlin</title>
+<meta name="description" content="CoreSetup Studio baut Premium-Websites für Unternehmen in Berlin: Design, Entwicklung, Hosting, Sicherheit und Support aus einer Hand.">
+<meta name="theme-color" content="#0a0a0a">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="CoreSetup Studio - Premium Websites für Unternehmen in Berlin">
+<meta property="og:description" content="Websites, die Vertrauen aufbauen und Kundenanfragen generieren. Design, Hosting, Sicherheit und Support aus einer Hand.">
+<meta property="og:image" content="assets/img/og-cover.jpg">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="canonical" href="https://coresetup.studio/">
+
+<!-- Universal Sans (xAI's proprietary display face) is not licensable.
+     Inter at weight 400 with tight negative tracking is the documented
+     open-source substitute. JetBrains Mono carries the uppercase
+     eyebrow/label role, and is also used inside the canvas globe's
+     hub-city labels (see assets/js/main.js). Both loaded via Google
+     Fonts - see README for the self-hosting note. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<!-- Phosphor Icons (regular, subset): self-hosted rather than loaded from a
+     CDN script, so the nav/bento/contact glyphs never depend on a third
+     party being reachable. See assets/css/phosphor.css. -->
+<link rel="stylesheet" href="assets/css/phosphor.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<!-- ============ NAV: single-row, translucent-to-elevated on scroll ============ -->
+<header class="nav-bar" data-nav data-scrolled="false">
+  <div class="nav-bar__inner">
+    <a href="#top" class="nav-bar__logo"><span class="nav-bar__logo-mark" aria-hidden="true"></span>CoreSetup Studio</a>
+    <nav class="nav-bar__links t-nav-link" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#prozess">Vorgehen</a>
+      <a href="#projekte">Projekte</a>
+      <a href="#preise">Preise</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-bar__actions">
+      <a href="#kontakt" class="btn-outline-sm">Projekt anfragen</a>
+      <button class="nav-bar__toggle" data-nav-toggle aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileNav">
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-mobile" id="mobileNav" data-nav-mobile data-open="false">
+  <nav aria-label="Mobile Navigation">
+    <a href="#leistungen">Leistungen</a>
+    <a href="#prozess">Vorgehen</a>
+    <a href="#projekte">Projekte</a>
+    <a href="#preise">Preise</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+</div>
+
+<main id="main" class="page-shell">
+
+  <!-- ============ HERO: draggable 3D world globe ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero__inner">
+      <div class="hero__copy">
+        <span class="t-eyebrow" data-reveal>CoreSetup Studio &middot; Berlin</span>
+        <h1 class="t-display-xl" data-reveal>Websites ohne Vergleich.</h1>
+        <p class="t-lead" data-reveal style="margin-top: 1.5rem;">Premium-Websites für Unternehmen, die den Unterschied sofort sehen wollen: Design, Hosting, Sicherheit und Support aus einer Hand.</p>
+        <div class="hero__ctas" data-reveal>
+          <a href="#kontakt" class="btn-primary">Projekt anfragen</a>
+          <a href="#leistungen" class="btn-outline">Leistungen ansehen</a>
+        </div>
+      </div>
+      <div class="hero__stage" data-reveal>
+        <div class="hero__glow" aria-hidden="true"></div>
+        <canvas id="globeCanvas" role="img" aria-label="Interaktiver 3D-Globus mit CoreSetup Studios internationalem Städtenetzwerk, mit der Maus oder per Touch drehbar"></canvas>
+        <span class="hero__hint" aria-hidden="true">Ziehen, um zu drehen</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section class="trust-strip">
+    <span class="trust-strip__stars" data-reveal aria-hidden="true">★★★★★</span>
+    <p class="t-caption" data-reveal><strong>5.0 bei Google</strong>, aus 12 Bewertungen. Ein fester Ansprechpartner für Design, Hosting, Sicherheit und Support.</p>
+  </section>
+
+  <!-- ============ LEISTUNGEN: bento, 5 cells, no filler ============ -->
+  <section class="band" id="leistungen">
+    <div class="wrap">
+      <div class="band__head" data-reveal>
+        <h2 class="t-display-lg">Vier Bereiche, ein Team.</h2>
+      </div>
+
+      <div class="bento" data-reveal>
+        <article class="bento__tile bento__tile--wide">
+          <span class="bento__icon"><i class="ph ph-code" aria-hidden="true"></i></span>
+          <h3>Website-Entwicklung</h3>
+          <p>Moderne Unternehmensseiten mit sauberer SEO-Struktur und klarem Fokus auf Kundenanfragen, konzipiert und gebaut für Marken, die sich vom Wettbewerb abheben wollen.</p>
+        </article>
+        <article class="bento__tile">
+          <span class="bento__icon"><i class="ph ph-hard-drives" aria-hidden="true"></i></span>
+          <h3>Hosting & Betrieb</h3>
+          <p>Verwaltetes Hosting inklusive Monitoring, automatischen Backups und laufendem Support.</p>
+        </article>
+        <article class="bento__tile">
+          <span class="bento__icon"><i class="ph ph-shield-check" aria-hidden="true"></i></span>
+          <h3>Security-Setup</h3>
+          <p>HTTPS, Security-Header und Schutzmaßnahmen gegen gängige Angriffe, direkt bei der Einrichtung.</p>
+        </article>
+        <article class="bento__tile">
+          <span class="bento__icon"><i class="ph ph-gauge" aria-hidden="true"></i></span>
+          <h3>Technische Stabilisierung</h3>
+          <p>Performance-Optimierung für bestehende Websites, die langsam geworden sind oder Fehler zeigen.</p>
+        </article>
+        <article class="bento__tile bento__tile--gold">
+          <h3>Ein Ansprechpartner.</h3>
+          <p>Von der ersten Idee bis zum Support danach bleibt die Ansprechperson dieselbe.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROZESS ============ -->
+  <section class="band" id="prozess">
+    <div class="wrap">
+      <div class="band__head" data-reveal>
+        <span class="t-eyebrow">Vorgehen</span>
+        <h2 class="t-display-lg">So läuft die Zusammenarbeit ab.</h2>
+      </div>
+
+      <div class="process-list" data-reveal>
+        <div class="process-row">
+          <span class="process-row__index">01</span>
+          <div>
+            <h3>Analyse</h3>
+            <p>Wir sichten deine bestehende Website oder Anforderung und zeigen, wo die größten Hebel liegen.</p>
+          </div>
+        </div>
+        <div class="process-row">
+          <span class="process-row__index">02</span>
+          <div>
+            <h3>Konzept & Design</h3>
+            <p>Struktur, Text und Design entstehen abgestimmt auf dein Angebot und deine Zielgruppe.</p>
+          </div>
+        </div>
+        <div class="process-row">
+          <span class="process-row__index">03</span>
+          <div>
+            <h3>Entwicklung</h3>
+            <p>Umsetzung mit sauberem Code, Performance-Budget und SEO-Grundlage von Anfang an.</p>
+          </div>
+        </div>
+        <div class="process-row">
+          <span class="process-row__index">04</span>
+          <div>
+            <h3>Launch & Support</h3>
+            <p>Übergabe, Monitoring und ein fester Ansprechpartner für alles, was danach kommt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJEKTE ============ -->
+  <section class="band" id="projekte">
+    <div class="wrap">
+      <div class="band__head" data-reveal>
+        <h2 class="t-display-lg">Referenzformate.</h2>
+        <p class="t-lead" style="margin-top: 0.75rem;">Beispielhafte Projektformate. Echte Referenzen und Case Studies stellen wir auf Anfrage bereit.</p>
+      </div>
+
+      <div class="work-rail" data-reveal>
+        <article class="work-card">
+          <a class="work-card__media" href="#kontakt">
+            <img src="https://picsum.photos/seed/coresetup-kanzlei-gold/700/700" alt="Website-Relaunch für eine Berliner Kanzlei" loading="lazy" width="700" height="700">
+          </a>
+          <h3>Website-Relaunch, Kanzlei</h3>
+          <p>Neue Struktur, klare Leistungsseiten, Kontaktpfad in drei Klicks.</p>
+          <a href="#kontakt" class="text-link">Mehr erfahren</a>
+        </article>
+        <article class="work-card">
+          <a class="work-card__media" href="#kontakt">
+            <img src="https://picsum.photos/seed/coresetup-zahnarzt-gold/700/700" alt="Website für eine Zahnarztpraxis" loading="lazy" width="700" height="700">
+          </a>
+          <h3>Praxis-Website, Zahnmedizin</h3>
+          <p>Terminanfrage direkt im ersten Bildschirm.</p>
+          <a href="#kontakt" class="text-link">Mehr erfahren</a>
+        </article>
+        <article class="work-card">
+          <a class="work-card__media" href="#kontakt">
+            <img src="https://picsum.photos/seed/coresetup-handwerk-gold/700/700" alt="Landingpage für einen Handwerksbetrieb" loading="lazy" width="700" height="700">
+          </a>
+          <h3>Landingpage, Handwerksbetrieb</h3>
+          <p>Ein Angebot, ein Formular, keine Ablenkung.</p>
+          <a href="#kontakt" class="text-link">Mehr erfahren</a>
+        </article>
+        <article class="work-card">
+          <a class="work-card__media" href="#kontakt">
+            <img src="https://picsum.photos/seed/coresetup-hotel-gold/700/700" alt="Website für ein Boutique-Hotel" loading="lazy" width="700" height="700">
+          </a>
+          <h3>Website, Boutique-Hotel</h3>
+          <p>Buchungsanfragen statt nur schöner Bilder.</p>
+          <a href="#kontakt" class="text-link">Mehr erfahren</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PREISE: asymmetric split, not 3 equal cards ============ -->
+  <section class="band" id="preise">
+    <div class="wrap">
+      <div class="band__head" data-reveal>
+        <h2 class="t-display-lg">Transparent kalkuliert.</h2>
+        <p class="t-lead" style="margin-top: 0.75rem;">Drei Pakete, keine versteckten Kosten.</p>
+      </div>
+
+      <div class="pricing-split" data-reveal>
+        <article class="price-card price-card--selected price-card--featured">
+          <span class="price-card__tag">Meistgewählt</span>
+          <h3>Business</h3>
+          <p class="price-card__desc">Vollständige Unternehmenswebsite mit mehreren Seiten.</p>
+          <p class="price-card__amount">1.999 €</p>
+          <ul class="price-card__list">
+            <li>Bis zu 8 Unterseiten</li>
+            <li>SEO-Grundstruktur</li>
+            <li>Individuelles Design</li>
+            <li>Security-Setup inklusive</li>
+          </ul>
+          <a href="#kontakt" class="btn-primary btn-block">Projekt anfragen</a>
+        </article>
+
+        <div class="pricing-split__stack">
+          <article class="price-card price-card--compact">
+            <h3>Starter</h3>
+            <p class="price-card__desc">Landingpage für ein Angebot oder eine Kampagne.</p>
+            <p class="price-card__amount">349 €</p>
+            <ul class="price-card__list">
+              <li>Eine Seite, klarer Aufbau</li>
+              <li>Kontaktformular</li>
+              <li>Mobile-optimiert</li>
+            </ul>
+            <a href="#kontakt" class="btn-outline btn-block">Projekt anfragen</a>
+          </article>
+
+          <article class="price-card price-card--compact">
+            <h3>Premium</h3>
+            <p class="price-card__desc">High-End-Entwicklung mit gehärteter Sicherheit.</p>
+            <p class="price-card__amount">3.999 €</p>
+            <ul class="price-card__list">
+              <li>Umfangreiche Struktur & Funktionen</li>
+              <li>Security-Hardening</li>
+              <li>Priorisierte Umsetzung</li>
+            </ul>
+            <a href="#kontakt" class="btn-outline btn-block">Projekt anfragen</a>
+          </article>
+        </div>
+      </div>
+
+      <p class="pricing-footnote">Optionales Managed Hosting: 29 bis 129 € pro Monat, je nach Umfang.</p>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIAL ============ -->
+  <section class="band quote-band">
+    <div class="wrap">
+      <div class="quote-band__stack" data-reveal>
+        <span class="quote-band__stars" aria-hidden="true">★★★★★</span>
+        <blockquote>"Sehr professionelle Umsetzung. Die Website sieht nicht nur gut aus, sondern bringt auch Anfragen."</blockquote>
+        <p class="quote-band__meta">Google-Rezension, 5 von 5 Sternen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECH: the page's one marquee ============ -->
+  <section class="band tech-band">
+    <div class="wrap" data-reveal>
+      <p class="t-caption">Technologien, mit denen wir arbeiten</p>
+      <div class="marquee">
+        <div class="marquee__track">
+          <span class="marquee__logo" role="img" aria-label="WordPress"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/></svg></span>
+          <span class="marquee__logo" role="img" aria-label="Webflow"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="m24 4.515-7.658 14.97H9.149l3.205-6.204h-.144C9.566 16.713 5.621 18.973 0 19.485v-6.118s3.596-.213 5.71-2.435H0V4.515h6.417v5.278l.144-.001 2.622-5.277h4.854v5.244h.144l2.72-5.244H24Z"/></svg></span>
+          <span class="marquee__logo" role="img" aria-label="Shopify"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z"/></svg></span>
+          <span class="marquee__logo" role="img" aria-label="Cloudflare"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.499-1.0615-.5205l-8.6592-.1123a.1559.1559 0 0 1-.1333-.0713c-.0283-.042-.0351-.0986-.021-.1553.0278-.084.1123-.1484.2036-.1562l8.7359-.1123c1.0351-.0489 2.1601-.8868 2.5537-1.9136l.499-1.3013c.0215-.0561.0293-.1128.0147-.168-.5625-2.5463-2.835-4.4453-5.5499-4.4453-2.5039 0-4.6284 1.6177-5.3876 3.8614-.4927-.3658-1.1187-.5625-1.794-.499-1.2026.119-2.1665 1.083-2.2861 2.2856-.0283.31-.0069.6128.0635.894C1.5683 13.171 0 14.7754 0 16.752c0 .1748.0142.3515.0352.5273.0141.083.0844.1475.1689.1475h15.9814c.0909 0 .1758-.0645.2032-.1553l.12-.4268zm2.7568-5.5634c-.0771 0-.1611 0-.2383.0112-.0566 0-.1054.0415-.127.0976l-.3378 1.1744c-.1475.5068-.0918.9707.1543 1.3164.2256.3164.6055.498 1.0625.5195l1.8437.1133c.0557 0 .1055.0263.1329.0703.0283.043.0351.1074.0214.1562-.0283.084-.1132.1485-.204.1553l-1.921.1123c-1.041.0488-2.1582.8867-2.5527 1.914l-.1406.3585c-.0283.0713.0215.1416.0986.1416h6.5977c.0771 0 .1474-.0489.169-.126.1122-.4082.1757-.837.1757-1.2803 0-2.6025-2.125-4.727-4.7344-4.727"/></svg></span>
+          <span class="marquee__logo" role="img" aria-label="Google Analytics"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M22.84 2.9982v17.9987c.0086 1.6473-1.3197 2.9897-2.967 2.9984a2.9808 2.9808 0 01-.3677-.0208c-1.528-.226-2.6477-1.5558-2.6105-3.1V3.1204c-.0369-1.5458 1.0856-2.8762 2.6157-3.1 1.6361-.1915 3.1178.9796 3.3093 2.6158.014.1201.0208.241.0202.3619zM4.1326 18.0548c-1.6417 0-2.9726 1.331-2.9726 2.9726C1.16 22.6691 2.4909 24 4.1326 24s2.9726-1.3309 2.9726-2.9726-1.331-2.9726-2.9726-2.9726zm7.8728-9.0098c-.0171 0-.0342 0-.0513.0003-1.6495.0904-2.9293 1.474-2.891 3.1256v7.9846c0 2.167.9535 3.4825 2.3505 3.763 1.6118.3266 3.1832-.7152 3.5098-2.327.04-.1974.06-.3983.0593-.5998v-8.9585c.003-1.6474-1.33-2.9852-2.9773-2.9882z"/></svg></span>
+          <span class="marquee__logo" role="img" aria-label="Stripe"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"/></svg></span>
+          <span class="marquee__logo" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/></svg></span>
+          <span class="marquee__logo" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="m24 4.515-7.658 14.97H9.149l3.205-6.204h-.144C9.566 16.713 5.621 18.973 0 19.485v-6.118s3.596-.213 5.71-2.435H0V4.515h6.417v5.278l.144-.001 2.622-5.277h4.854v5.244h.144l2.72-5.244H24Z"/></svg></span>
+          <span class="marquee__logo" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z"/></svg></span>
+          <span class="marquee__logo" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.499-1.0615-.5205l-8.6592-.1123a.1559.1559 0 0 1-.1333-.0713c-.0283-.042-.0351-.0986-.021-.1553.0278-.084.1123-.1484.2036-.1562l8.7359-.1123c1.0351-.0489 2.1601-.8868 2.5537-1.9136l.499-1.3013c.0215-.0561.0293-.1128.0147-.168-.5625-2.5463-2.835-4.4453-5.5499-4.4453-2.5039 0-4.6284 1.6177-5.3876 3.8614-.4927-.3658-1.1187-.5625-1.794-.499-1.2026.119-2.1665 1.083-2.2861 2.2856-.0283.31-.0069.6128.0635.894C1.5683 13.171 0 14.7754 0 16.752c0 .1748.0142.3515.0352.5273.0141.083.0844.1475.1689.1475h15.9814c.0909 0 .1758-.0645.2032-.1553l.12-.4268zm2.7568-5.5634c-.0771 0-.1611 0-.2383.0112-.0566 0-.1054.0415-.127.0976l-.3378 1.1744c-.1475.5068-.0918.9707.1543 1.3164.2256.3164.6055.498 1.0625.5195l1.8437.1133c.0557 0 .1055.0263.1329.0703.0283.043.0351.1074.0214.1562-.0283.084-.1132.1485-.204.1553l-1.921.1123c-1.041.0488-2.1582.8867-2.5527 1.914l-.1406.3585c-.0283.0713.0215.1416.0986.1416h6.5977c.0771 0 .1474-.0489.169-.126.1122-.4082.1757-.837.1757-1.2803 0-2.6025-2.125-4.727-4.7344-4.727"/></svg></span>
+          <span class="marquee__logo" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M22.84 2.9982v17.9987c.0086 1.6473-1.3197 2.9897-2.967 2.9984a2.9808 2.9808 0 01-.3677-.0208c-1.528-.226-2.6477-1.5558-2.6105-3.1V3.1204c-.0369-1.5458 1.0856-2.8762 2.6157-3.1 1.6361-.1915 3.1178.9796 3.3093 2.6158.014.1201.0208.241.0202.3619zM4.1326 18.0548c-1.6417 0-2.9726 1.331-2.9726 2.9726C1.16 22.6691 2.4909 24 4.1326 24s2.9726-1.3309 2.9726-2.9726-1.331-2.9726-2.9726-2.9726zm7.8728-9.0098c-.0171 0-.0342 0-.0513.0003-1.6495.0904-2.9293 1.474-2.891 3.1256v7.9846c0 2.167.9535 3.4825 2.3505 3.763 1.6118.3266 3.1832-.7152 3.5098-2.327.04-.1974.06-.3983.0593-.5998v-8.9585c.003-1.6474-1.33-2.9852-2.9773-2.9882z"/></svg></span>
+          <span class="marquee__logo" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.594-7.305h.003z"/></svg></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="band" id="faq">
+    <div class="wrap wrap--text">
+      <div class="band__head" data-reveal>
+        <h2 class="t-display-lg">Vor dem Anfragen beantwortet.</h2>
+      </div>
+
+      <div class="faq" data-reveal>
+        <details class="faq__item" open>
+          <summary>Wie lange dauert die Umsetzung einer Website?</summary>
+          <p>Je nach Umfang zwischen zwei und sechs Wochen, von der Analyse bis zum Launch. Den genauen Rahmen legen wir vorab gemeinsam fest.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Was ist im Hosting enthalten?</summary>
+          <p>Monitoring, automatische Backups, Sicherheitsupdates und Support. Du musst dich um nichts Technisches selbst kümmern.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Kann ich meine bestehende Website "retten" statt neu zu bauen?</summary>
+          <p>Oft ja. Wir prüfen zuerst, ob eine technische Stabilisierung reicht, bevor wir einen kompletten Neubau empfehlen.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Wie läuft die Zusammenarbeit ab?</summary>
+          <p>Ein fester Ansprechpartner begleitet dein Projekt von der ersten Anfrage bis zum Support danach. Kein Wechsel der Kontaktperson.</p>
+        </details>
+        <details class="faq__item">
+          <summary>Bietet ihr eine kostenlose Analyse an?</summary>
+          <p>Ja. Schick uns deine bestehende Website oder dein Vorhaben, wir melden uns mit einer ehrlichen Einschätzung zurück.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAKT ============ -->
+  <section class="band" id="kontakt" style="border-bottom: none;">
+    <div class="wrap">
+      <div class="band__head" data-reveal>
+        <span class="t-eyebrow">Kontakt</span>
+        <h2 class="t-display-lg">Projekt anfragen.</h2>
+        <p class="t-lead" style="margin-top: 0.75rem;">Erzähl uns kurz, worum es geht.</p>
+      </div>
+
+      <div class="kontakt-grid" data-reveal>
+        <div class="kontakt-intro">
+          <p>Wir melden uns in der Regel innerhalb von 48 Stunden mit einer ehrlichen Einschätzung.</p>
+          <div class="kontakt-direct">
+            <a href="mailto:info@coresetup.studio" class="text-link">
+              <i class="ph ph-envelope-simple" aria-hidden="true"></i> info@coresetup.studio
+            </a>
+            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="text-link">
+              <i class="ph ph-whatsapp-logo" aria-hidden="true"></i> Direkt per WhatsApp schreiben
+            </a>
+          </div>
+        </div>
+
+        <form data-contact-form>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-block">Projekt anfragen</button>
+          <p class="field__hint">Dieses Formular ist ein Platzhalter. Bitte an ein echtes Formular-Backend (z. B. Formspree, eigenes API-Endpoint) anbinden.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__cols">
+      <div class="footer__col">
+        <h4>CoreSetup Studio</h4>
+        <span>Premium Websites, Hosting, Sicherheit und Support für Unternehmen in Berlin.</span>
+      </div>
+      <div class="footer__col">
+        <h4>Navigation</h4>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#projekte">Projekte</a>
+        <a href="#preise">Preise</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div class="footer__col">
+        <h4>Kontakt</h4>
+        <a href="mailto:info@coresetup.studio">info@coresetup.studio</a>
+        <span>Berlin, Deutschland</span>
+      </div>
+      <div class="footer__col">
+        <h4>Rechtliches</h4>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+    <div class="footer__legal">
+      © <span data-year></span> CoreSetup Studio
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
